@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx shadcn:*)",
+      "Bash(dir \"C:\\Users\\Victus\\Documents\\GitHub\\restaurant-management-system\\src\\components\" /s /b)",
+      "Bash(dir \"C:\\Users\\Victus\\Documents\\GitHub\\restaurant-management-system\\src\\app\" /b)",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm run lint:*)",
+      "Bash(dir \"C:\\Users\\Victus\\Documents\\GitHub\\restaurant-management-system\" /b)",
+      "Bash(npx next lint:*)",
+      "Bash(npx eslint:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

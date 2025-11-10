@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+@layer base {
+  :root {
+    /* Light Mode - Spotify Inspired */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 141 73% 42%; /* Spotify Green #1db954 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 16%; /* Dark gray */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 141 73% 42%; /* Spotify Green accent */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 141 73% 42%; /* Spotify Green */
+    --chart-1: 141 73% 42%; /* Spotify Green */
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --status-reserved: 217 91% 60%; /* Blue for reserved status */
+    --status-cleaning: 45 93% 47%; /* Yellow for cleaning status */
+    /* Order Status Colors */
+    --status-pending: 0 0% 45%; /* Neutral gray */
+    --status-confirmed: 217 91% 60%; /* Blue */
+    --status-preparing: 25 95% 53%; /* Orange/Amber */
+    --status-ready: 262 83% 58%; /* Purple */
+    --status-served: 141 73% 42%; /* Spotify Green */
+    --status-completed: 141 73% 35%; /* Darker Spotify Green */
+    --status-cancelled: 0 84% 60%; /* Red */
+    --urgency-warning: 38 92% 50%; /* Amber */
+    --urgency-critical: 25 95% 53%; /* Orange */
+  }
+
+  .dark {
+    /* Dark Mode - Spotify Theme */
+    --background: 0 0% 7%; /* Spotify Black #121212 */
+    --foreground: 0 0% 98%;
+    --card: 0 0% 9%; /* Spotify Dark Gray #181818 */
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 141 73% 42%; /* Spotify Green #1db954 */
+    --primary-foreground: 0 0% 7%;
+    --secondary: 0 0% 16%; /* Spotify Gray #282828 */
+    --secondary-foreground: 0 0% 70%; /* Light gray text */
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 70%; /* Spotify Light Gray #b3b3b3 */
+    --accent: 141 73% 42%; /* Spotify Green */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 141 73% 42%; /* Spotify Green ring */
+    --chart-1: 141 73% 42%; /* Spotify Green */
+    --chart-2: 220 70% 50%;
+    --chart-3: 160 60% 45%;
+    --chart-4: 30 80% 55%;
+    --chart-5: 280 65% 60%;
+    --status-reserved: 217 91% 60%; /* Blue for reserved status */
+    --status-cleaning: 45 93% 47%; /* Yellow for cleaning status */
+    /* Order Status Colors - Same in dark mode for consistency */
+    --status-pending: 0 0% 50%; /* Slightly lighter gray for dark mode */
+    --status-confirmed: 217 91% 65%; /* Slightly lighter blue */
+    --status-preparing: 25 95% 58%; /* Slightly lighter orange */
+    --status-ready: 262 83% 63%; /* Slightly lighter purple */
+    --status-served: 141 73% 42%; /* Spotify Green (same) */
+    --status-completed: 141 73% 35%; /* Darker Spotify Green (same) */
+    --status-cancelled: 0 84% 65%; /* Slightly lighter red */
+    --urgency-warning: 38 92% 55%; /* Slightly lighter amber */
+    --urgency-critical: 25 95% 58%; /* Slightly lighter orange */
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
